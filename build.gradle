@@ -14,6 +14,15 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
 
+    dependencies {
+        testImplementation 'org.testng:testng:7.1.0'
+
+    }
+
+    test {
+        useTestNG()
+    }
+
 }
 test {
     useJUnitPlatform()
